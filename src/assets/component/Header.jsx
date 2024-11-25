@@ -21,11 +21,11 @@ const Header = () => {
   return (
     <Navbar
       shouldHideOnScroll
+      position="sticky"
       onMenuOpenChange={setIsMenuOpen}
       className="bg-transparent mx-auto pt-5 w-full"
       isBlurred={false}
       maxWidth="xl"
-      
     >
       {/* Mobile Menu Toggle */}
       <NavbarMenuToggle
@@ -36,7 +36,11 @@ const Header = () => {
 
       {/* Logo Section */}
       <NavbarBrand className="flex items-center">
-        <img src="./logo.svg" alt="Logo" className="h-12 w-12 md:w-20 md:h-20" />
+        <img
+          src="./logo.svg"
+          alt="Logo"
+          className="h-12 w-12 md:w-20 md:h-20"
+        />
         <p className="font-bold text-base sm:text-lg lg:text-xl text-white ps-2">
           Wern Finance
         </p>
@@ -68,7 +72,6 @@ const Header = () => {
             variant="bordered"
             radius="full"
             startContent={<Contact />}
-            
           >
             Contact
           </Button>
@@ -77,7 +80,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <NavbarMenu
-        className={`bg-[#1a1e1c] text-white transition-transform duration-300 ${
+        className={`bg-[#1a1e1c]/25 backdrop-blur-lg mt-5 text-white transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

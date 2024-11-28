@@ -6,7 +6,7 @@ const Share = (props) => {
   return (
     <>
       <div
-        className={`flex items-center gap-6 flex-col justify-center ${
+        className={`flex items-center place-items-center gap-6 flex-col justify-center ${
           flexname === "md:flex-row" ? "md:flex-row" : "md:flex-row-reverse"
         } `}
       >
@@ -29,7 +29,7 @@ const Share = (props) => {
         <div className="grid place-items-center mx-auto self-center md:w-1/2 w-full">
           <img
             src={img}
-            className=" object-cover max-w-md lg:max-w-xl "
+            className=" object-cover max-w-xs md:max-w-md lg:max-w-lg "
             alt=""
           />
         </div>

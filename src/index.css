@@ -16,3 +16,17 @@
     @apply text-[#ADB2B1] font-poppins;
   }
 }
+
+@layer utilities {
+  @media (min-width: 250px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  @media (min-width: 450px) {
+    html {
+      font-size: 100%;
+    }
+  }
+
+}

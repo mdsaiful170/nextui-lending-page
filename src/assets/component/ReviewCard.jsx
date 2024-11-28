@@ -1,8 +1,10 @@
+
 const ReviewCard = (props) => {
   const { id, icon, des, img, name, prof } = props || {};
 
   return (
     <>
+  
       <div
         key={id}
         className="px-6 py-12 max-w-sm mx-8 rounded-md bg-[#27322F3D]/25 backdrop-blur-xl "

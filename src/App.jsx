@@ -1,5 +1,6 @@
 import DevitCard from "./assets/component/DevitCard";
 import Faq from "./assets/component/Faq";
+import Footer from "./assets/component/Footer";
 import Header from "./assets/component/Header";
 import Hero from "./assets/component/Hero";
 import Offer from "./assets/component/Offer";
@@ -19,6 +20,7 @@ function App() {
           <Review />
           <Faq />
         </div>
+          <Footer />
       </main>
     </>
   );

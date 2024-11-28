@@ -11,16 +11,15 @@ export default {
   ],
   theme: {
     container: { center: true },
-
     extend: {
       colors: {
         primary: "#772ab3",
         secondary: "#3D3F54",
         foreground: "#ffffff",
-        
       },
       fontFamily: {
         mplusone: ["M PLUS 1", "sans-serif"],
+        poppins: ["Poppins", "serif"],
       },
     },
   },

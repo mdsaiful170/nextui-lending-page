@@ -4,7 +4,7 @@ import Share from "./Share";
 const debiteCard = [
   {
     id: 1,
-    img: "./debit-img-one.svg",
+    img: "./debit-card-1.svg",
     icon: <MoveRight />,
     title: "Wern Debit Card",
     subtitle:
@@ -15,7 +15,7 @@ const debiteCard = [
   },
   {
     id: 2,
-    img: "./debit-img-two.svg",
+    img: "./debit-card-2.svg",
     title: "Find the Perfect Card for You",
     subtitle:
       "Unlocking the Power of Crypto, Both Virtually and Physically Manage your crypto effortlessly and spend it seamlessly with Wern. Our virtual card allows for instant and secure online transactions, while the physical Wern Card empowers you to convert and spend your crypto at millions of merchants worldwide. Experience the flexibility and convenience of both options, all within the secure and user-friendly Wern ecosystem.",
@@ -30,7 +30,6 @@ const DevitCard = () => {
         <section key={i}>
           <Share {...res} key={i} />
         </section>
-        
       ))}
 
       <img src="./debit-img-one.svg" alt="" />
